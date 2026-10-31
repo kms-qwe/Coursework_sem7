@@ -1,0 +1,48 @@
+# --- Окружение ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Данные (скачиваются scripts/download_data.sh, кэш собирает src/prepare_data.py) ---
+data/
+
+# --- Модель и фото руководителя (Google Drive, в репозиторий не кладём) ---
+external/
+
+# --- Результаты запусков: веса и ONNX тяжёлые и воспроизводятся скриптами ---
+runs/models/
+runs/onnx/
+runs_smoke/
+*.pth
+*.pt
+*.onnx
+*.npz
+*.parquet
+*.zip
+
+# --- Обзор источников ---
+obzor/
+
+# --- Файлы Claude / ИИ-ассистента ---
+CONTEXT.md
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+AGENTS.md
+
+# --- LaTeX: служебные файлы сборки ---
+*.aux
+*.log
+!runs/logs/*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# --- Система и редакторы ---
+.DS_Store
+.idea/
+.vscode/

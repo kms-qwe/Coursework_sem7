@@ -1,0 +1,555 @@
+device mps | torch 2.14.1 | smp 0.5.0 | torch-pruning 1.6.0
+  none             0.0 base      параметры 1.000 GMACs 1.000  test Dice 0.9244  PH2 Dice 0.9112
+=== random, прунинг 30%
+  random           0.3 pruned    параметры 0.488 GMACs 0.487  test Dice 0.0000  PH2 Dice 0.0000
+[random_30] эпоха 1/20  loss 0.2676  val Dice 0.9179  IoU 0.8568  19 с
+[random_30] эпоха 2/20  loss 0.2229  val Dice 0.9172  IoU 0.8556  19 с
+[random_30] эпоха 3/20  loss 0.2128  val Dice 0.9145  IoU 0.8514  19 с
+[random_30] эпоха 4/20  loss 0.2221  val Dice 0.9106  IoU 0.8477  19 с
+[random_30] эпоха 5/20  loss 0.2026  val Dice 0.9070  IoU 0.8388  19 с
+[random_30] эпоха 6/20  loss 0.2020  val Dice 0.9158  IoU 0.8556  19 с
+[random_30] эпоха 7/20  loss 0.1885  val Dice 0.9188  IoU 0.8583  20 с
+[random_30] эпоха 8/20  loss 0.1869  val Dice 0.9156  IoU 0.8532  22 с
+[random_30] эпоха 9/20  loss 0.1834  val Dice 0.9190  IoU 0.8600  23 с
+[random_30] эпоха 10/20  loss 0.1809  val Dice 0.9141  IoU 0.8522  24 с
+[random_30] эпоха 11/20  loss 0.1855  val Dice 0.9179  IoU 0.8587  23 с
+[random_30] эпоха 12/20  loss 0.1763  val Dice 0.9229  IoU 0.8653  23 с
+[random_30] эпоха 13/20  loss 0.1616  val Dice 0.9261  IoU 0.8687  22 с
+[random_30] эпоха 14/20  loss 0.1629  val Dice 0.9279  IoU 0.8710  22 с
+[random_30] эпоха 15/20  loss 0.1619  val Dice 0.9261  IoU 0.8685  22 с
+[random_30] эпоха 16/20  loss 0.1603  val Dice 0.9253  IoU 0.8665  22 с
+[random_30] эпоха 17/20  loss 0.1596  val Dice 0.9250  IoU 0.8660  23 с
+[random_30] эпоха 18/20  loss 0.1574  val Dice 0.9261  IoU 0.8678  22 с
+[random_30] эпоха 19/20  loss 0.1534  val Dice 0.9261  IoU 0.8677  22 с
+[random_30] эпоха 20/20  loss 0.1509  val Dice 0.9260  IoU 0.8677  23 с
+  random           0.3 finetuned параметры 0.488 GMACs 0.487  test Dice 0.9214  PH2 Dice 0.9111
+=== random, прунинг 50%
+  random           0.5 pruned    параметры 0.250 GMACs 0.256  test Dice 0.0000  PH2 Dice 0.0000
+[random_50] эпоха 1/20  loss 0.5029  val Dice 0.8982  IoU 0.8226  11 с
+[random_50] эпоха 2/20  loss 0.3573  val Dice 0.9107  IoU 0.8444  11 с
+[random_50] эпоха 3/20  loss 0.3079  val Dice 0.8998  IoU 0.8292  11 с
+[random_50] эпоха 4/20  loss 0.3022  val Dice 0.9144  IoU 0.8495  11 с
+[random_50] эпоха 5/20  loss 0.2766  val Dice 0.9133  IoU 0.8478  11 с
+[random_50] эпоха 6/20  loss 0.2801  val Dice 0.9138  IoU 0.8481  11 с
+[random_50] эпоха 7/20  loss 0.2518  val Dice 0.9155  IoU 0.8508  11 с
+[random_50] эпоха 8/20  loss 0.2478  val Dice 0.9084  IoU 0.8395  11 с
+[random_50] эпоха 9/20  loss 0.2289  val Dice 0.9261  IoU 0.8668  11 с
+[random_50] эпоха 10/20  loss 0.2314  val Dice 0.9186  IoU 0.8554  11 с
+[random_50] эпоха 11/20  loss 0.2272  val Dice 0.9196  IoU 0.8567  11 с
+[random_50] эпоха 12/20  loss 0.2205  val Dice 0.9173  IoU 0.8527  11 с
+[random_50] эпоха 13/20  loss 0.2094  val Dice 0.9221  IoU 0.8608  11 с
+[random_50] эпоха 14/20  loss 0.2039  val Dice 0.9232  IoU 0.8625  11 с
+[random_50] эпоха 15/20  loss 0.2043  val Dice 0.9220  IoU 0.8610  11 с
+[random_50] эпоха 16/20  loss 0.1979  val Dice 0.9235  IoU 0.8630  11 с
+[random_50] эпоха 17/20  loss 0.1996  val Dice 0.9229  IoU 0.8620  11 с
+[random_50] эпоха 18/20  loss 0.1981  val Dice 0.9240  IoU 0.8637  11 с
+[random_50] эпоха 19/20  loss 0.1920  val Dice 0.9241  IoU 0.8639  11 с
+[random_50] эпоха 20/20  loss 0.1909  val Dice 0.9234  IoU 0.8629  11 с
+  random           0.5 finetuned параметры 0.250 GMACs 0.256  test Dice 0.9096  PH2 Dice 0.9015
+=== random, прунинг 70%
+  random           0.7 pruned    параметры 0.089 GMACs 0.092  test Dice 0.0000  PH2 Dice 0.0000
+[random_70] эпоха 1/20  loss 0.8299  val Dice 0.8335  IoU 0.7392  8 с
+[random_70] эпоха 2/20  loss 0.5949  val Dice 0.8702  IoU 0.7894  8 с
+[random_70] эпоха 3/20  loss 0.5027  val Dice 0.8761  IoU 0.7961  8 с
+[random_70] эпоха 4/20  loss 0.4816  val Dice 0.8867  IoU 0.8111  8 с
+[random_70] эпоха 5/20  loss 0.4284  val Dice 0.8750  IoU 0.7917  8 с
+[random_70] эпоха 6/20  loss 0.4110  val Dice 0.8844  IoU 0.8059  8 с
+[random_70] эпоха 7/20  loss 0.3771  val Dice 0.8979  IoU 0.8254  8 с
+[random_70] эпоха 8/20  loss 0.3543  val Dice 0.8934  IoU 0.8212  8 с
+[random_70] эпоха 9/20  loss 0.3338  val Dice 0.8949  IoU 0.8234  8 с
+[random_70] эпоха 10/20  loss 0.3272  val Dice 0.8945  IoU 0.8231  8 с
+[random_70] эпоха 11/20  loss 0.3204  val Dice 0.9005  IoU 0.8324  8 с
+[random_70] эпоха 12/20  loss 0.3136  val Dice 0.8954  IoU 0.8218  8 с
+[random_70] эпоха 13/20  loss 0.3015  val Dice 0.9018  IoU 0.8338  8 с
+[random_70] эпоха 14/20  loss 0.2938  val Dice 0.9050  IoU 0.8363  8 с
+[random_70] эпоха 15/20  loss 0.2817  val Dice 0.9070  IoU 0.8408  8 с
+[random_70] эпоха 16/20  loss 0.2805  val Dice 0.9073  IoU 0.8409  8 с
+[random_70] эпоха 17/20  loss 0.2816  val Dice 0.9083  IoU 0.8426  8 с
+[random_70] эпоха 18/20  loss 0.2765  val Dice 0.9088  IoU 0.8431  8 с
+[random_70] эпоха 19/20  loss 0.2728  val Dice 0.9087  IoU 0.8429  8 с
+[random_70] эпоха 20/20  loss 0.2724  val Dice 0.9073  IoU 0.8411  8 с
+  random           0.7 finetuned параметры 0.089 GMACs 0.092  test Dice 0.9044  PH2 Dice 0.8878
+=== random, прунинг 90%
+  random           0.9 pruned    параметры 0.010 GMACs 0.011  test Dice 0.4012  PH2 Dice 0.4478
+[random_90] эпоха 1/20  loss 1.2995  val Dice 0.7125  IoU 0.6030  3 с
+[random_90] эпоха 2/20  loss 1.2559  val Dice 0.6899  IoU 0.5726  3 с
+[random_90] эпоха 3/20  loss 1.2249  val Dice 0.7743  IoU 0.6618  3 с
+[random_90] эпоха 4/20  loss 1.1982  val Dice 0.7952  IoU 0.6908  3 с
+[random_90] эпоха 5/20  loss 1.1751  val Dice 0.7846  IoU 0.6881  3 с
+[random_90] эпоха 6/20  loss 1.1581  val Dice 0.7881  IoU 0.6850  3 с
+[random_90] эпоха 7/20  loss 1.1399  val Dice 0.7989  IoU 0.6966  3 с
+[random_90] эпоха 8/20  loss 1.1259  val Dice 0.8043  IoU 0.7029  3 с
+[random_90] эпоха 9/20  loss 1.1132  val Dice 0.8326  IoU 0.7395  3 с
+[random_90] эпоха 10/20  loss 1.0986  val Dice 0.8374  IoU 0.7427  3 с
+[random_90] эпоха 11/20  loss 1.0980  val Dice 0.8521  IoU 0.7634  3 с
+[random_90] эпоха 12/20  loss 1.0925  val Dice 0.8438  IoU 0.7531  3 с
+[random_90] эпоха 13/20  loss 1.0865  val Dice 0.8533  IoU 0.7635  3 с
+[random_90] эпоха 14/20  loss 1.0833  val Dice 0.8500  IoU 0.7615  3 с
+[random_90] эпоха 15/20  loss 1.0722  val Dice 0.8541  IoU 0.7671  3 с
+[random_90] эпоха 16/20  loss 1.0709  val Dice 0.8629  IoU 0.7776  3 с
+[random_90] эпоха 17/20  loss 1.0682  val Dice 0.8677  IoU 0.7795  3 с
+[random_90] эпоха 18/20  loss 1.0630  val Dice 0.8541  IoU 0.7671  3 с
+[random_90] эпоха 19/20  loss 1.0679  val Dice 0.8573  IoU 0.7708  3 с
+[random_90] эпоха 20/20  loss 1.0688  val Dice 0.8592  IoU 0.7727  3 с
+  random           0.9 finetuned параметры 0.010 GMACs 0.011  test Dice 0.8667  PH2 Dice 0.8446
+=== l1, прунинг 30%
+  l1               0.3 pruned    параметры 0.488 GMACs 0.487  test Dice 0.3037  PH2 Dice 0.1123
+[l1_30] эпоха 1/20  loss 0.2548  val Dice 0.9140  IoU 0.8516  22 с
+[l1_30] эпоха 2/20  loss 0.2276  val Dice 0.9233  IoU 0.8648  22 с
+[l1_30] эпоха 3/20  loss 0.2128  val Dice 0.9212  IoU 0.8601  22 с
+[l1_30] эпоха 4/20  loss 0.2226  val Dice 0.9231  IoU 0.8672  23 с
+[l1_30] эпоха 5/20  loss 0.2125  val Dice 0.9164  IoU 0.8541  23 с
+[l1_30] эпоха 6/20  loss 0.2133  val Dice 0.9123  IoU 0.8474  23 с
+[l1_30] эпоха 7/20  loss 0.1930  val Dice 0.9290  IoU 0.8730  23 с
+[l1_30] эпоха 8/20  loss 0.1842  val Dice 0.9244  IoU 0.8646  23 с
+[l1_30] эпоха 9/20  loss 0.1799  val Dice 0.9297  IoU 0.8736  23 с
+[l1_30] эпоха 10/20  loss 0.1867  val Dice 0.9279  IoU 0.8701  23 с
+[l1_30] эпоха 11/20  loss 0.1809  val Dice 0.9280  IoU 0.8708  23 с
+[l1_30] эпоха 12/20  loss 0.1770  val Dice 0.9238  IoU 0.8634  22 с
+[l1_30] эпоха 13/20  loss 0.1674  val Dice 0.9271  IoU 0.8697  22 с
+[l1_30] эпоха 14/20  loss 0.1665  val Dice 0.9296  IoU 0.8733  22 с
+[l1_30] эпоха 15/20  loss 0.1626  val Dice 0.9269  IoU 0.8694  23 с
+[l1_30] эпоха 16/20  loss 0.1611  val Dice 0.9284  IoU 0.8714  22 с
+[l1_30] эпоха 17/20  loss 0.1611  val Dice 0.9273  IoU 0.8698  23 с
+[l1_30] эпоха 18/20  loss 0.1570  val Dice 0.9276  IoU 0.8702  22 с
+[l1_30] эпоха 19/20  loss 0.1555  val Dice 0.9280  IoU 0.8709  23 с
+[l1_30] эпоха 20/20  loss 0.1527  val Dice 0.9277  IoU 0.8705  22 с
+  l1               0.3 finetuned параметры 0.488 GMACs 0.487  test Dice 0.9164  PH2 Dice 0.9199
+=== l1, прунинг 50%
+  l1               0.5 pruned    параметры 0.250 GMACs 0.256  test Dice 0.0000  PH2 Dice 0.0000
+[l1_50] эпоха 1/20  loss 0.3923  val Dice 0.9073  IoU 0.8430  11 с
+[l1_50] эпоха 2/20  loss 0.3012  val Dice 0.9187  IoU 0.8554  11 с
+[l1_50] эпоха 3/20  loss 0.2726  val Dice 0.9169  IoU 0.8517  11 с
+[l1_50] эпоха 4/20  loss 0.2667  val Dice 0.9147  IoU 0.8502  11 с
+[l1_50] эпоха 5/20  loss 0.2553  val Dice 0.9117  IoU 0.8444  11 с
+[l1_50] эпоха 6/20  loss 0.2432  val Dice 0.9240  IoU 0.8635  11 с
+[l1_50] эпоха 7/20  loss 0.2265  val Dice 0.9265  IoU 0.8684  11 с
+[l1_50] эпоха 8/20  loss 0.2218  val Dice 0.9171  IoU 0.8522  11 с
+[l1_50] эпоха 9/20  loss 0.2135  val Dice 0.9276  IoU 0.8696  11 с
+[l1_50] эпоха 10/20  loss 0.2223  val Dice 0.9253  IoU 0.8660  11 с
+[l1_50] эпоха 11/20  loss 0.2144  val Dice 0.9287  IoU 0.8714  11 с
+[l1_50] эпоха 12/20  loss 0.2138  val Dice 0.9256  IoU 0.8658  11 с
+[l1_50] эпоха 13/20  loss 0.1999  val Dice 0.9299  IoU 0.8729  11 с
+[l1_50] эпоха 14/20  loss 0.1984  val Dice 0.9322  IoU 0.8767  11 с
+[l1_50] эпоха 15/20  loss 0.1972  val Dice 0.9297  IoU 0.8729  11 с
+[l1_50] эпоха 16/20  loss 0.1941  val Dice 0.9301  IoU 0.8735  11 с
+[l1_50] эпоха 17/20  loss 0.1932  val Dice 0.9309  IoU 0.8747  11 с
+[l1_50] эпоха 18/20  loss 0.1955  val Dice 0.9308  IoU 0.8745  11 с
+[l1_50] эпоха 19/20  loss 0.1868  val Dice 0.9314  IoU 0.8756  11 с
+[l1_50] эпоха 20/20  loss 0.1881  val Dice 0.9310  IoU 0.8749  11 с
+  l1               0.5 finetuned параметры 0.250 GMACs 0.256  test Dice 0.9212  PH2 Dice 0.9182
+=== l1, прунинг 70%
+  l1               0.7 pruned    параметры 0.089 GMACs 0.092  test Dice 0.0000  PH2 Dice 0.0000
+[l1_70] эпоха 1/20  loss 0.8777  val Dice 0.8487  IoU 0.7514  8 с
+[l1_70] эпоха 2/20  loss 0.6573  val Dice 0.8775  IoU 0.7931  8 с
+[l1_70] эпоха 3/20  loss 0.5986  val Dice 0.8783  IoU 0.7940  8 с
+[l1_70] эпоха 4/20  loss 0.5695  val Dice 0.8994  IoU 0.8238  8 с
+[l1_70] эпоха 5/20  loss 0.5357  val Dice 0.8842  IoU 0.8019  8 с
+[l1_70] эпоха 6/20  loss 0.5103  val Dice 0.8900  IoU 0.8138  8 с
+[l1_70] эпоха 7/20  loss 0.4810  val Dice 0.8999  IoU 0.8284  8 с
+[l1_70] эпоха 8/20  loss 0.4612  val Dice 0.8921  IoU 0.8180  8 с
+[l1_70] эпоха 9/20  loss 0.4478  val Dice 0.9095  IoU 0.8411  8 с
+[l1_70] эпоха 10/20  loss 0.4292  val Dice 0.9125  IoU 0.8459  8 с
+[l1_70] эпоха 11/20  loss 0.4227  val Dice 0.9067  IoU 0.8390  8 с
+[l1_70] эпоха 12/20  loss 0.4229  val Dice 0.9024  IoU 0.8304  8 с
+[l1_70] эпоха 13/20  loss 0.4039  val Dice 0.9113  IoU 0.8441  8 с
+[l1_70] эпоха 14/20  loss 0.3979  val Dice 0.9125  IoU 0.8480  8 с
+[l1_70] эпоха 15/20  loss 0.3847  val Dice 0.9106  IoU 0.8442  8 с
+[l1_70] эпоха 16/20  loss 0.3800  val Dice 0.9155  IoU 0.8508  8 с
+[l1_70] эпоха 17/20  loss 0.3807  val Dice 0.9163  IoU 0.8516  8 с
+[l1_70] эпоха 18/20  loss 0.3791  val Dice 0.9153  IoU 0.8503  8 с
+[l1_70] эпоха 19/20  loss 0.3751  val Dice 0.9169  IoU 0.8526  8 с
+[l1_70] эпоха 20/20  loss 0.3751  val Dice 0.9153  IoU 0.8503  8 с
+  l1               0.7 finetuned параметры 0.089 GMACs 0.092  test Dice 0.9066  PH2 Dice 0.8991
+=== l1, прунинг 90%
+  l1               0.9 pruned    параметры 0.010 GMACs 0.011  test Dice 0.0000  PH2 Dice 0.0000
+[l1_90] эпоха 1/20  loss 1.1600  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 2/20  loss 1.0871  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 3/20  loss 1.0517  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 4/20  loss 1.0251  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 5/20  loss 1.0021  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 6/20  loss 0.9673  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 7/20  loss 0.9452  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 8/20  loss 0.9369  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 9/20  loss 0.9183  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 10/20  loss 0.9071  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 11/20  loss 0.8921  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 12/20  loss 0.8858  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 13/20  loss 0.8811  val Dice 0.0000  IoU 0.0000  3 с
+[l1_90] эпоха 14/20  loss 0.8735  val Dice 0.8284  IoU 0.7377  3 с
+[l1_90] эпоха 15/20  loss 0.8662  val Dice 0.8298  IoU 0.7393  3 с
+[l1_90] эпоха 16/20  loss 0.8588  val Dice 0.8422  IoU 0.7577  3 с
+[l1_90] эпоха 17/20  loss 0.8602  val Dice 0.8460  IoU 0.7612  3 с
+[l1_90] эпоха 18/20  loss 0.8544  val Dice 0.8436  IoU 0.7567  3 с
+[l1_90] эпоха 19/20  loss 0.8513  val Dice 0.8495  IoU 0.7650  3 с
+[l1_90] эпоха 20/20  loss 0.8443  val Dice 0.8417  IoU 0.7541  3 с
+  l1               0.9 finetuned параметры 0.010 GMACs 0.011  test Dice 0.8348  PH2 Dice 0.8177
+=== fpgm, прунинг 30%
+  fpgm             0.3 pruned    параметры 0.488 GMACs 0.487  test Dice 0.0000  PH2 Dice 0.0000
+[fpgm_30] эпоха 1/20  loss 0.2299  val Dice 0.9166  IoU 0.8534  23 с
+[fpgm_30] эпоха 2/20  loss 0.2078  val Dice 0.9202  IoU 0.8577  23 с
+[fpgm_30] эпоха 3/20  loss 0.2027  val Dice 0.9205  IoU 0.8585  23 с
+[fpgm_30] эпоха 4/20  loss 0.1957  val Dice 0.9122  IoU 0.8503  23 с
+[fpgm_30] эпоха 5/20  loss 0.2000  val Dice 0.9145  IoU 0.8505  23 с
+[fpgm_30] эпоха 6/20  loss 0.1934  val Dice 0.9244  IoU 0.8656  23 с
+[fpgm_30] эпоха 7/20  loss 0.1751  val Dice 0.9270  IoU 0.8696  23 с
+[fpgm_30] эпоха 8/20  loss 0.1755  val Dice 0.9278  IoU 0.8697  23 с
+[fpgm_30] эпоха 9/20  loss 0.1670  val Dice 0.9302  IoU 0.8737  23 с
+[fpgm_30] эпоха 10/20  loss 0.1663  val Dice 0.9227  IoU 0.8647  23 с
+[fpgm_30] эпоха 11/20  loss 0.1642  val Dice 0.9242  IoU 0.8643  23 с
+[fpgm_30] эпоха 12/20  loss 0.1562  val Dice 0.9260  IoU 0.8669  23 с
+[fpgm_30] эпоха 13/20  loss 0.1530  val Dice 0.9279  IoU 0.8704  23 с
+[fpgm_30] эпоха 14/20  loss 0.1522  val Dice 0.9308  IoU 0.8744  23 с
+[fpgm_30] эпоха 15/20  loss 0.1507  val Dice 0.9266  IoU 0.8681  23 с
+[fpgm_30] эпоха 16/20  loss 0.1505  val Dice 0.9288  IoU 0.8714  23 с
+[fpgm_30] эпоха 17/20  loss 0.1498  val Dice 0.9283  IoU 0.8709  23 с
+[fpgm_30] эпоха 18/20  loss 0.1448  val Dice 0.9283  IoU 0.8709  23 с
+[fpgm_30] эпоха 19/20  loss 0.1446  val Dice 0.9291  IoU 0.8721  23 с
+[fpgm_30] эпоха 20/20  loss 0.1402  val Dice 0.9288  IoU 0.8717  23 с
+  fpgm             0.3 finetuned параметры 0.488 GMACs 0.487  test Dice 0.9247  PH2 Dice 0.9251
+=== fpgm, прунинг 50%
+  fpgm             0.5 pruned    параметры 0.250 GMACs 0.256  test Dice 0.0000  PH2 Dice 0.0000
+[fpgm_50] эпоха 1/20  loss 0.4657  val Dice 0.9141  IoU 0.8495  11 с
+[fpgm_50] эпоха 2/20  loss 0.3711  val Dice 0.9152  IoU 0.8529  11 с
+[fpgm_50] эпоха 3/20  loss 0.3403  val Dice 0.9183  IoU 0.8540  11 с
+[fpgm_50] эпоха 4/20  loss 0.3278  val Dice 0.8918  IoU 0.8238  11 с
+[fpgm_50] эпоха 5/20  loss 0.3199  val Dice 0.9163  IoU 0.8504  11 с
+[fpgm_50] эпоха 6/20  loss 0.2953  val Dice 0.9177  IoU 0.8536  11 с
+[fpgm_50] эпоха 7/20  loss 0.2664  val Dice 0.9284  IoU 0.8707  11 с
+[fpgm_50] эпоха 8/20  loss 0.2643  val Dice 0.9177  IoU 0.8546  11 с
+[fpgm_50] эпоха 9/20  loss 0.2532  val Dice 0.9262  IoU 0.8674  11 с
+[fpgm_50] эпоха 10/20  loss 0.2562  val Dice 0.9252  IoU 0.8653  11 с
+[fpgm_50] эпоха 11/20  loss 0.2445  val Dice 0.9227  IoU 0.8630  11 с
+[fpgm_50] эпоха 12/20  loss 0.2313  val Dice 0.9246  IoU 0.8653  11 с
+[fpgm_50] эпоха 13/20  loss 0.2218  val Dice 0.9300  IoU 0.8737  11 с
+[fpgm_50] эпоха 14/20  loss 0.2192  val Dice 0.9317  IoU 0.8766  11 с
+[fpgm_50] эпоха 15/20  loss 0.2171  val Dice 0.9277  IoU 0.8703  11 с
+[fpgm_50] эпоха 16/20  loss 0.2154  val Dice 0.9297  IoU 0.8732  11 с
+[fpgm_50] эпоха 17/20  loss 0.2138  val Dice 0.9306  IoU 0.8748  11 с
+[fpgm_50] эпоха 18/20  loss 0.2120  val Dice 0.9307  IoU 0.8749  11 с
+[fpgm_50] эпоха 19/20  loss 0.2090  val Dice 0.9308  IoU 0.8752  11 с
+[fpgm_50] эпоха 20/20  loss 0.2027  val Dice 0.9308  IoU 0.8752  11 с
+  fpgm             0.5 finetuned параметры 0.250 GMACs 0.256  test Dice 0.9133  PH2 Dice 0.9113
+=== fpgm, прунинг 70%
+  fpgm             0.7 pruned    параметры 0.089 GMACs 0.092  test Dice 0.0000  PH2 Dice 0.0000
+[fpgm_70] эпоха 1/20  loss 0.9052  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 2/20  loss 0.7750  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 3/20  loss 0.7402  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 4/20  loss 0.7370  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 5/20  loss 0.7140  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 6/20  loss 0.7047  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 7/20  loss 0.6900  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 8/20  loss 0.6804  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 9/20  loss 0.6743  val Dice 0.0000  IoU 0.0000  8 с
+[fpgm_70] эпоха 10/20  loss 0.6755  val Dice 0.0003  IoU 0.0001  8 с
+[fpgm_70] эпоха 11/20  loss 0.6620  val Dice 0.9085  IoU 0.8422  8 с
+[fpgm_70] эпоха 12/20  loss 0.6675  val Dice 0.9060  IoU 0.8375  8 с
+[fpgm_70] эпоха 13/20  loss 0.6510  val Dice 0.9149  IoU 0.8504  8 с
+[fpgm_70] эпоха 14/20  loss 0.6539  val Dice 0.9130  IoU 0.8486  8 с
+[fpgm_70] эпоха 15/20  loss 0.6537  val Dice 0.9115  IoU 0.8463  8 с
+[fpgm_70] эпоха 16/20  loss 0.6474  val Dice 0.9171  IoU 0.8539  8 с
+[fpgm_70] эпоха 17/20  loss 0.6533  val Dice 0.9152  IoU 0.8511  8 с
+[fpgm_70] эпоха 18/20  loss 0.6454  val Dice 0.9144  IoU 0.8506  8 с
+[fpgm_70] эпоха 19/20  loss 0.6455  val Dice 0.9156  IoU 0.8522  8 с
+[fpgm_70] эпоха 20/20  loss 0.6417  val Dice 0.9137  IoU 0.8496  8 с
+  fpgm             0.7 finetuned параметры 0.089 GMACs 0.092  test Dice 0.9024  PH2 Dice 0.8796
+=== fpgm, прунинг 90%
+  fpgm             0.9 pruned    параметры 0.010 GMACs 0.011  test Dice 0.0000  PH2 Dice 0.0000
+[fpgm_90] эпоха 1/20  loss 1.2606  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 2/20  loss 1.1541  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 3/20  loss 1.0681  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 4/20  loss 1.0091  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 5/20  loss 0.9751  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 6/20  loss 0.9405  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 7/20  loss 0.9179  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 8/20  loss 0.8958  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 9/20  loss 0.8794  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 10/20  loss 0.8698  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 11/20  loss 0.8610  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 12/20  loss 0.8525  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 13/20  loss 0.8460  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 14/20  loss 0.8401  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 15/20  loss 0.8337  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 16/20  loss 0.8280  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 17/20  loss 0.8318  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 18/20  loss 0.8244  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 19/20  loss 0.8210  val Dice 0.0000  IoU 0.0000  3 с
+[fpgm_90] эпоха 20/20  loss 0.8249  val Dice 0.0000  IoU 0.0000  3 с
+  fpgm             0.9 finetuned параметры 0.010 GMACs 0.011  test Dice 0.0000  PH2 Dice 0.0000
+=== bn_scale, прунинг 30%
+  bn_scale         0.3 pruned    параметры 0.488 GMACs 0.487  test Dice 0.0000  PH2 Dice 0.0000
+[bn_scale_30] эпоха 1/20  loss 0.3054  val Dice 0.9097  IoU 0.8406  23 с
+[bn_scale_30] эпоха 2/20  loss 0.2425  val Dice 0.9096  IoU 0.8469  23 с
+[bn_scale_30] эпоха 3/20  loss 0.2252  val Dice 0.9175  IoU 0.8542  23 с
+[bn_scale_30] эпоха 4/20  loss 0.2273  val Dice 0.9165  IoU 0.8532  23 с
+[bn_scale_30] эпоха 5/20  loss 0.2198  val Dice 0.9145  IoU 0.8516  23 с
+[bn_scale_30] эпоха 6/20  loss 0.2152  val Dice 0.9122  IoU 0.8467  23 с
+[bn_scale_30] эпоха 7/20  loss 0.2052  val Dice 0.9196  IoU 0.8583  23 с
+[bn_scale_30] эпоха 8/20  loss 0.1971  val Dice 0.9203  IoU 0.8584  23 с
+[bn_scale_30] эпоха 9/20  loss 0.1935  val Dice 0.9256  IoU 0.8670  23 с
+[bn_scale_30] эпоха 10/20  loss 0.2006  val Dice 0.9196  IoU 0.8588  23 с
+[bn_scale_30] эпоха 11/20  loss 0.1959  val Dice 0.9230  IoU 0.8624  23 с
+[bn_scale_30] эпоха 12/20  loss 0.1839  val Dice 0.9248  IoU 0.8656  23 с
+[bn_scale_30] эпоха 13/20  loss 0.1770  val Dice 0.9253  IoU 0.8658  23 с
+[bn_scale_30] эпоха 14/20  loss 0.1770  val Dice 0.9308  IoU 0.8748  23 с
+[bn_scale_30] эпоха 15/20  loss 0.1782  val Dice 0.9271  IoU 0.8692  23 с
+[bn_scale_30] эпоха 16/20  loss 0.1725  val Dice 0.9293  IoU 0.8727  23 с
+[bn_scale_30] эпоха 17/20  loss 0.1723  val Dice 0.9284  IoU 0.8710  23 с
+[bn_scale_30] эпоха 18/20  loss 0.1705  val Dice 0.9278  IoU 0.8703  23 с
+[bn_scale_30] эпоха 19/20  loss 0.1659  val Dice 0.9278  IoU 0.8701  23 с
+[bn_scale_30] эпоха 20/20  loss 0.1608  val Dice 0.9276  IoU 0.8699  23 с
+  bn_scale         0.3 finetuned параметры 0.488 GMACs 0.487  test Dice 0.9212  PH2 Dice 0.9133
+=== bn_scale, прунинг 50%
+  bn_scale         0.5 pruned    параметры 0.250 GMACs 0.256  test Dice 0.0000  PH2 Dice 0.0000
+[bn_scale_50] эпоха 1/20  loss 0.6786  val Dice 0.8912  IoU 0.8138  11 с
+[bn_scale_50] эпоха 2/20  loss 0.5416  val Dice 0.8904  IoU 0.8111  11 с
+[bn_scale_50] эпоха 3/20  loss 0.4809  val Dice 0.8920  IoU 0.8202  11 с
+[bn_scale_50] эпоха 4/20  loss 0.4391  val Dice 0.8967  IoU 0.8252  11 с
+[bn_scale_50] эпоха 5/20  loss 0.4154  val Dice 0.9025  IoU 0.8302  11 с
+[bn_scale_50] эпоха 6/20  loss 0.3785  val Dice 0.9053  IoU 0.8345  11 с
+[bn_scale_50] эпоха 7/20  loss 0.3577  val Dice 0.9101  IoU 0.8424  11 с
+[bn_scale_50] эпоха 8/20  loss 0.3518  val Dice 0.9103  IoU 0.8422  11 с
+[bn_scale_50] эпоха 9/20  loss 0.3301  val Dice 0.9134  IoU 0.8495  11 с
+[bn_scale_50] эпоха 10/20  loss 0.3300  val Dice 0.9096  IoU 0.8434  11 с
+[bn_scale_50] эпоха 11/20  loss 0.3140  val Dice 0.9183  IoU 0.8551  11 с
+[bn_scale_50] эпоха 12/20  loss 0.3019  val Dice 0.9168  IoU 0.8524  11 с
+[bn_scale_50] эпоха 13/20  loss 0.2862  val Dice 0.9203  IoU 0.8579  11 с
+[bn_scale_50] эпоха 14/20  loss 0.2846  val Dice 0.9201  IoU 0.8574  11 с
+[bn_scale_50] эпоха 15/20  loss 0.2800  val Dice 0.9178  IoU 0.8541  11 с
+[bn_scale_50] эпоха 16/20  loss 0.2720  val Dice 0.9210  IoU 0.8591  11 с
+[bn_scale_50] эпоха 17/20  loss 0.2781  val Dice 0.9214  IoU 0.8598  11 с
+[bn_scale_50] эпоха 18/20  loss 0.2783  val Dice 0.9217  IoU 0.8602  11 с
+[bn_scale_50] эпоха 19/20  loss 0.2685  val Dice 0.9222  IoU 0.8608  11 с
+[bn_scale_50] эпоха 20/20  loss 0.2691  val Dice 0.9214  IoU 0.8597  11 с
+  bn_scale         0.5 finetuned параметры 0.250 GMACs 0.256  test Dice 0.9108  PH2 Dice 0.9032
+=== bn_scale, прунинг 70%
+  bn_scale         0.7 pruned    параметры 0.089 GMACs 0.092  test Dice 0.0000  PH2 Dice 0.0000
+[bn_scale_70] эпоха 1/20  loss 1.1313  val Dice 0.0000  IoU 0.0000  8 с
+[bn_scale_70] эпоха 2/20  loss 0.9769  val Dice 0.0000  IoU 0.0000  8 с
+[bn_scale_70] эпоха 3/20  loss 0.9281  val Dice 0.0000  IoU 0.0000  8 с
+[bn_scale_70] эпоха 4/20  loss 0.8971  val Dice 0.0000  IoU 0.0000  8 с
+[bn_scale_70] эпоха 5/20  loss 0.8792  val Dice 0.0000  IoU 0.0000  8 с
+[bn_scale_70] эпоха 6/20  loss 0.8430  val Dice 0.0000  IoU 0.0000  8 с
+[bn_scale_70] эпоха 7/20  loss 0.8131  val Dice 0.0001  IoU 0.0000  8 с
+[bn_scale_70] эпоха 8/20  loss 0.7939  val Dice 0.0004  IoU 0.0002  8 с
+[bn_scale_70] эпоха 9/20  loss 0.7900  val Dice 0.0008  IoU 0.0004  8 с
+[bn_scale_70] эпоха 10/20  loss 0.7713  val Dice 0.0022  IoU 0.0011  8 с
+[bn_scale_70] эпоха 11/20  loss 0.7569  val Dice 0.8793  IoU 0.8027  8 с
+[bn_scale_70] эпоха 12/20  loss 0.7534  val Dice 0.8791  IoU 0.8009  8 с
+[bn_scale_70] эпоха 13/20  loss 0.7494  val Dice 0.8932  IoU 0.8201  8 с
+[bn_scale_70] эпоха 14/20  loss 0.7392  val Dice 0.8954  IoU 0.8233  8 с
+[bn_scale_70] эпоха 15/20  loss 0.7224  val Dice 0.8886  IoU 0.8151  8 с
+[bn_scale_70] эпоха 16/20  loss 0.7202  val Dice 0.8924  IoU 0.8215  8 с
+[bn_scale_70] эпоха 17/20  loss 0.7207  val Dice 0.8922  IoU 0.8209  8 с
+[bn_scale_70] эпоха 18/20  loss 0.7177  val Dice 0.8905  IoU 0.8190  8 с
+[bn_scale_70] эпоха 19/20  loss 0.7088  val Dice 0.8934  IoU 0.8227  8 с
+[bn_scale_70] эпоха 20/20  loss 0.7121  val Dice 0.8904  IoU 0.8189  8 с
+  bn_scale         0.7 finetuned параметры 0.089 GMACs 0.092  test Dice 0.8810  PH2 Dice 0.8789
+=== bn_scale, прунинг 90%
+  bn_scale         0.9 pruned    параметры 0.010 GMACs 0.011  test Dice 0.0000  PH2 Dice 0.0000
+[bn_scale_90] эпоха 1/20  loss 1.2324  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 2/20  loss 1.1274  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 3/20  loss 1.0806  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 4/20  loss 1.0515  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 5/20  loss 1.0341  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 6/20  loss 1.0066  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 7/20  loss 0.9869  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 8/20  loss 0.9711  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 9/20  loss 0.9527  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 10/20  loss 0.9458  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 11/20  loss 0.9371  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 12/20  loss 0.9322  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 13/20  loss 0.9244  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 14/20  loss 0.9093  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 15/20  loss 0.9022  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 16/20  loss 0.9048  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 17/20  loss 0.9046  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 18/20  loss 0.8944  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 19/20  loss 0.8933  val Dice 0.0000  IoU 0.0000  3 с
+[bn_scale_90] эпоха 20/20  loss 0.8928  val Dice 0.0000  IoU 0.0000  3 с
+  bn_scale         0.9 finetuned параметры 0.010 GMACs 0.011  test Dice 0.0000  PH2 Dice 0.0000
+=== taylor, прунинг 30%
+  taylor           0.3 pruned    параметры 0.488 GMACs 0.487  test Dice 0.7727  PH2 Dice 0.5908
+[taylor_30] эпоха 1/20  loss 0.2543  val Dice 0.9090  IoU 0.8440  23 с
+[taylor_30] эпоха 2/20  loss 0.2117  val Dice 0.9190  IoU 0.8564  23 с
+[taylor_30] эпоха 3/20  loss 0.2042  val Dice 0.9227  IoU 0.8634  23 с
+[taylor_30] эпоха 4/20  loss 0.1852  val Dice 0.9216  IoU 0.8617  23 с
+[taylor_30] эпоха 5/20  loss 0.1806  val Dice 0.9156  IoU 0.8520  23 с
+[taylor_30] эпоха 6/20  loss 0.1808  val Dice 0.9273  IoU 0.8690  23 с
+[taylor_30] эпоха 7/20  loss 0.1788  val Dice 0.9300  IoU 0.8734  23 с
+[taylor_30] эпоха 8/20  loss 0.1710  val Dice 0.9294  IoU 0.8722  23 с
+[taylor_30] эпоха 9/20  loss 0.1717  val Dice 0.9296  IoU 0.8728  23 с
+[taylor_30] эпоха 10/20  loss 0.1673  val Dice 0.9278  IoU 0.8708  23 с
+[taylor_30] эпоха 11/20  loss 0.1627  val Dice 0.9316  IoU 0.8764  23 с
+[taylor_30] эпоха 12/20  loss 0.1592  val Dice 0.9334  IoU 0.8788  23 с
+[taylor_30] эпоха 13/20  loss 0.1557  val Dice 0.9342  IoU 0.8800  23 с
+[taylor_30] эпоха 14/20  loss 0.1519  val Dice 0.9338  IoU 0.8802  23 с
+[taylor_30] эпоха 15/20  loss 0.1498  val Dice 0.9339  IoU 0.8803  23 с
+[taylor_30] эпоха 16/20  loss 0.1436  val Dice 0.9337  IoU 0.8802  23 с
+[taylor_30] эпоха 17/20  loss 0.1427  val Dice 0.9336  IoU 0.8801  23 с
+[taylor_30] эпоха 18/20  loss 0.1424  val Dice 0.9333  IoU 0.8797  23 с
+[taylor_30] эпоха 19/20  loss 0.1459  val Dice 0.9332  IoU 0.8795  23 с
+[taylor_30] эпоха 20/20  loss 0.1434  val Dice 0.9334  IoU 0.8800  23 с
+  taylor           0.3 finetuned параметры 0.488 GMACs 0.487  test Dice 0.9211  PH2 Dice 0.8991
+=== taylor, прунинг 50%
+  taylor           0.5 pruned    параметры 0.250 GMACs 0.256  test Dice 0.0000  PH2 Dice 0.0000
+[taylor_50] эпоха 1/20  loss 0.5092  val Dice 0.9022  IoU 0.8325  11 с
+[taylor_50] эпоха 2/20  loss 0.3235  val Dice 0.9244  IoU 0.8635  11 с
+[taylor_50] эпоха 3/20  loss 0.3144  val Dice 0.9237  IoU 0.8636  11 с
+[taylor_50] эпоха 4/20  loss 0.2809  val Dice 0.9184  IoU 0.8560  11 с
+[taylor_50] эпоха 5/20  loss 0.2590  val Dice 0.9180  IoU 0.8544  11 с
+[taylor_50] эпоха 6/20  loss 0.2405  val Dice 0.9227  IoU 0.8625  11 с
+[taylor_50] эпоха 7/20  loss 0.2352  val Dice 0.9205  IoU 0.8576  11 с
+[taylor_50] эпоха 8/20  loss 0.2401  val Dice 0.9262  IoU 0.8678  11 с
+[taylor_50] эпоха 9/20  loss 0.2226  val Dice 0.9278  IoU 0.8703  11 с
+[taylor_50] эпоха 10/20  loss 0.2127  val Dice 0.9264  IoU 0.8679  11 с
+[taylor_50] эпоха 11/20  loss 0.2113  val Dice 0.9306  IoU 0.8746  11 с
+[taylor_50] эпоха 12/20  loss 0.2025  val Dice 0.9284  IoU 0.8708  11 с
+[taylor_50] эпоха 13/20  loss 0.2008  val Dice 0.9291  IoU 0.8727  11 с
+[taylor_50] эпоха 14/20  loss 0.1970  val Dice 0.9306  IoU 0.8754  11 с
+[taylor_50] эпоха 15/20  loss 0.1929  val Dice 0.9299  IoU 0.8743  11 с
+[taylor_50] эпоха 16/20  loss 0.1871  val Dice 0.9297  IoU 0.8741  11 с
+[taylor_50] эпоха 17/20  loss 0.1869  val Dice 0.9303  IoU 0.8750  11 с
+[taylor_50] эпоха 18/20  loss 0.1865  val Dice 0.9300  IoU 0.8745  11 с
+[taylor_50] эпоха 19/20  loss 0.1891  val Dice 0.9305  IoU 0.8753  11 с
+[taylor_50] эпоха 20/20  loss 0.1883  val Dice 0.9306  IoU 0.8755  11 с
+  taylor           0.5 finetuned параметры 0.250 GMACs 0.256  test Dice 0.9165  PH2 Dice 0.8855
+=== taylor, прунинг 70%
+  taylor           0.7 pruned    параметры 0.089 GMACs 0.092  test Dice 0.0000  PH2 Dice 0.0000
+[taylor_70] эпоха 1/20  loss 1.1171  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 2/20  loss 0.9187  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 3/20  loss 0.8423  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 4/20  loss 0.8200  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 5/20  loss 0.7731  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 6/20  loss 0.7490  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 7/20  loss 0.7386  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 8/20  loss 0.7394  val Dice 0.0000  IoU 0.0000  8 с
+[taylor_70] эпоха 9/20  loss 0.7120  val Dice 0.0019  IoU 0.0010  8 с
+[taylor_70] эпоха 10/20  loss 0.6983  val Dice 0.9019  IoU 0.8288  8 с
+[taylor_70] эпоха 11/20  loss 0.7062  val Dice 0.9096  IoU 0.8407  8 с
+[taylor_70] эпоха 12/20  loss 0.6956  val Dice 0.9097  IoU 0.8408  8 с
+[taylor_70] эпоха 13/20  loss 0.6920  val Dice 0.9101  IoU 0.8420  8 с
+[taylor_70] эпоха 14/20  loss 0.6834  val Dice 0.9123  IoU 0.8453  8 с
+[taylor_70] эпоха 15/20  loss 0.6823  val Dice 0.9119  IoU 0.8445  8 с
+[taylor_70] эпоха 16/20  loss 0.6708  val Dice 0.9115  IoU 0.8436  8 с
+[taylor_70] эпоха 17/20  loss 0.6677  val Dice 0.9133  IoU 0.8468  8 с
+[taylor_70] эпоха 18/20  loss 0.6746  val Dice 0.9117  IoU 0.8441  8 с
+[taylor_70] эпоха 19/20  loss 0.6760  val Dice 0.9124  IoU 0.8453  8 с
+[taylor_70] эпоха 20/20  loss 0.6744  val Dice 0.9122  IoU 0.8451  8 с
+  taylor           0.7 finetuned параметры 0.089 GMACs 0.092  test Dice 0.9008  PH2 Dice 0.8902
+=== taylor, прунинг 90%
+  taylor           0.9 pruned    параметры 0.010 GMACs 0.011  test Dice 0.0000  PH2 Dice 0.0000
+[taylor_90] эпоха 1/20  loss 1.2975  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 2/20  loss 1.2146  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 3/20  loss 1.1728  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 4/20  loss 1.1432  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 5/20  loss 1.1201  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 6/20  loss 1.0965  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 7/20  loss 1.0725  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 8/20  loss 1.0581  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 9/20  loss 1.0427  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 10/20  loss 1.0235  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 11/20  loss 1.0180  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 12/20  loss 1.0017  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 13/20  loss 1.0008  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 14/20  loss 0.9903  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 15/20  loss 0.9844  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 16/20  loss 0.9760  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 17/20  loss 0.9736  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 18/20  loss 0.9725  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 19/20  loss 0.9706  val Dice 0.0000  IoU 0.0000  3 с
+[taylor_90] эпоха 20/20  loss 0.9693  val Dice 0.0000  IoU 0.0000  3 с
+  taylor           0.9 finetuned параметры 0.010 GMACs 0.011  test Dice 0.0000  PH2 Dice 0.0000
+=== unstructured_l1, прунинг 30%
+  unstructured_l1  0.3 pruned    параметры 0.700 GMACs 1.000  test Dice 0.9247  PH2 Dice 0.9110
+[unstructured_l1_30] эпоха 1/20  loss 0.1649  val Dice 0.9220  IoU 0.8656  30 с
+[unstructured_l1_30] эпоха 2/20  loss 0.1753  val Dice 0.9246  IoU 0.8658  30 с
+[unstructured_l1_30] эпоха 3/20  loss 0.1639  val Dice 0.9223  IoU 0.8634  31 с
+[unstructured_l1_30] эпоха 4/20  loss 0.1597  val Dice 0.9285  IoU 0.8714  31 с
+[unstructured_l1_30] эпоха 5/20  loss 0.1565  val Dice 0.9263  IoU 0.8691  31 с
+[unstructured_l1_30] эпоха 6/20  loss 0.1538  val Dice 0.9258  IoU 0.8677  30 с
+[unstructured_l1_30] эпоха 7/20  loss 0.1535  val Dice 0.9246  IoU 0.8667  31 с
+[unstructured_l1_30] эпоха 8/20  loss 0.1510  val Dice 0.9187  IoU 0.8613  31 с
+[unstructured_l1_30] эпоха 9/20  loss 0.1462  val Dice 0.9283  IoU 0.8718  30 с
+[unstructured_l1_30] эпоха 10/20  loss 0.1468  val Dice 0.9123  IoU 0.8533  30 с
+[unstructured_l1_30] эпоха 11/20  loss 0.1436  val Dice 0.9235  IoU 0.8649  30 с
+[unstructured_l1_30] эпоха 12/20  loss 0.1409  val Dice 0.9255  IoU 0.8677  30 с
+[unstructured_l1_30] эпоха 13/20  loss 0.1380  val Dice 0.9233  IoU 0.8638  30 с
+[unstructured_l1_30] эпоха 14/20  loss 0.1349  val Dice 0.9249  IoU 0.8668  30 с
+[unstructured_l1_30] эпоха 15/20  loss 0.1304  val Dice 0.9227  IoU 0.8631  30 с
+[unstructured_l1_30] эпоха 16/20  loss 0.1329  val Dice 0.9247  IoU 0.8662  30 с
+[unstructured_l1_30] эпоха 17/20  loss 0.1273  val Dice 0.9251  IoU 0.8668  30 с
+[unstructured_l1_30] эпоха 18/20  loss 0.1275  val Dice 0.9250  IoU 0.8669  31 с
+[unstructured_l1_30] эпоха 19/20  loss 0.1288  val Dice 0.9270  IoU 0.8699  30 с
+[unstructured_l1_30] эпоха 20/20  loss 0.1277  val Dice 0.9278  IoU 0.8713  30 с
+  unstructured_l1  0.3 finetuned параметры 0.700 GMACs 1.000  test Dice 0.9205  PH2 Dice 0.9236
+=== unstructured_l1, прунинг 50%
+  unstructured_l1  0.5 pruned    параметры 0.500 GMACs 1.000  test Dice 0.9230  PH2 Dice 0.9146
+[unstructured_l1_50] эпоха 1/20  loss 0.1584  val Dice 0.9271  IoU 0.8703  31 с
+[unstructured_l1_50] эпоха 2/20  loss 0.1660  val Dice 0.9242  IoU 0.8652  30 с
+[unstructured_l1_50] эпоха 3/20  loss 0.1555  val Dice 0.9236  IoU 0.8652  30 с
+[unstructured_l1_50] эпоха 4/20  loss 0.1549  val Dice 0.9242  IoU 0.8653  30 с
+[unstructured_l1_50] эпоха 5/20  loss 0.1514  val Dice 0.9261  IoU 0.8687  30 с
+[unstructured_l1_50] эпоха 6/20  loss 0.1454  val Dice 0.9255  IoU 0.8669  30 с
+[unstructured_l1_50] эпоха 7/20  loss 0.1465  val Dice 0.9244  IoU 0.8663  30 с
+[unstructured_l1_50] эпоха 8/20  loss 0.1471  val Dice 0.9201  IoU 0.8604  30 с
+[unstructured_l1_50] эпоха 9/20  loss 0.1418  val Dice 0.9270  IoU 0.8701  31 с
+[unstructured_l1_50] эпоха 10/20  loss 0.1446  val Dice 0.9102  IoU 0.8509  30 с
+[unstructured_l1_50] эпоха 11/20  loss 0.1404  val Dice 0.9236  IoU 0.8650  31 с
+[unstructured_l1_50] эпоха 12/20  loss 0.1384  val Dice 0.9226  IoU 0.8637  30 с
+[unstructured_l1_50] эпоха 13/20  loss 0.1334  val Dice 0.9236  IoU 0.8642  30 с
+[unstructured_l1_50] эпоха 14/20  loss 0.1316  val Dice 0.9250  IoU 0.8669  30 с
+[unstructured_l1_50] эпоха 15/20  loss 0.1281  val Dice 0.9225  IoU 0.8625  30 с
+[unstructured_l1_50] эпоха 16/20  loss 0.1301  val Dice 0.9244  IoU 0.8655  30 с
+[unstructured_l1_50] эпоха 17/20  loss 0.1241  val Dice 0.9241  IoU 0.8651  30 с
+[unstructured_l1_50] эпоха 18/20  loss 0.1258  val Dice 0.9248  IoU 0.8667  30 с
+[unstructured_l1_50] эпоха 19/20  loss 0.1263  val Dice 0.9253  IoU 0.8672  30 с
+[unstructured_l1_50] эпоха 20/20  loss 0.1249  val Dice 0.9264  IoU 0.8690  30 с
+  unstructured_l1  0.5 finetuned параметры 0.500 GMACs 1.000  test Dice 0.9198  PH2 Dice 0.9154
+=== unstructured_l1, прунинг 70%
+  unstructured_l1  0.7 pruned    параметры 0.301 GMACs 1.000  test Dice 0.9145  PH2 Dice 0.9083
+[unstructured_l1_70] эпоха 1/20  loss 0.1554  val Dice 0.9282  IoU 0.8724  30 с
+[unstructured_l1_70] эпоха 2/20  loss 0.1589  val Dice 0.9219  IoU 0.8623  30 с
+[unstructured_l1_70] эпоха 3/20  loss 0.1517  val Dice 0.9249  IoU 0.8663  30 с
+[unstructured_l1_70] эпоха 4/20  loss 0.1515  val Dice 0.9271  IoU 0.8687  30 с
+[unstructured_l1_70] эпоха 5/20  loss 0.1497  val Dice 0.9291  IoU 0.8728  30 с
+[unstructured_l1_70] эпоха 6/20  loss 0.1455  val Dice 0.9263  IoU 0.8674  30 с
+[unstructured_l1_70] эпоха 7/20  loss 0.1466  val Dice 0.9252  IoU 0.8670  30 с
+[unstructured_l1_70] эпоха 8/20  loss 0.1416  val Dice 0.9234  IoU 0.8665  30 с
+[unstructured_l1_70] эпоха 9/20  loss 0.1380  val Dice 0.9266  IoU 0.8701  30 с
+[unstructured_l1_70] эпоха 10/20  loss 0.1388  val Dice 0.9183  IoU 0.8589  30 с
+[unstructured_l1_70] эпоха 11/20  loss 0.1394  val Dice 0.9242  IoU 0.8656  30 с
+[unstructured_l1_70] эпоха 12/20  loss 0.1370  val Dice 0.9247  IoU 0.8663  30 с
+[unstructured_l1_70] эпоха 13/20  loss 0.1327  val Dice 0.9238  IoU 0.8645  30 с
+[unstructured_l1_70] эпоха 14/20  loss 0.1311  val Dice 0.9256  IoU 0.8673  30 с
+[unstructured_l1_70] эпоха 15/20  loss 0.1274  val Dice 0.9247  IoU 0.8658  30 с
+[unstructured_l1_70] эпоха 16/20  loss 0.1294  val Dice 0.9256  IoU 0.8671  30 с
+[unstructured_l1_70] эпоха 17/20  loss 0.1255  val Dice 0.9256  IoU 0.8673  30 с
+[unstructured_l1_70] эпоха 18/20  loss 0.1261  val Dice 0.9252  IoU 0.8670  30 с
+[unstructured_l1_70] эпоха 19/20  loss 0.1277  val Dice 0.9256  IoU 0.8673  30 с
+[unstructured_l1_70] эпоха 20/20  loss 0.1247  val Dice 0.9269  IoU 0.8693  30 с
+  unstructured_l1  0.7 finetuned параметры 0.301 GMACs 1.000  test Dice 0.9244  PH2 Dice 0.9210
+=== unstructured_l1, прунинг 90%
+  unstructured_l1  0.9 pruned    параметры 0.101 GMACs 1.000  test Dice 0.8498  PH2 Dice 0.8064
+[unstructured_l1_90] эпоха 1/20  loss 0.1824  val Dice 0.9252  IoU 0.8683  30 с
+[unstructured_l1_90] эпоха 2/20  loss 0.1704  val Dice 0.9253  IoU 0.8669  30 с
+[unstructured_l1_90] эпоха 3/20  loss 0.1598  val Dice 0.9299  IoU 0.8742  30 с
+[unstructured_l1_90] эпоха 4/20  loss 0.1539  val Dice 0.9264  IoU 0.8687  30 с
+[unstructured_l1_90] эпоха 5/20  loss 0.1592  val Dice 0.9286  IoU 0.8718  30 с
+[unstructured_l1_90] эпоха 6/20  loss 0.1477  val Dice 0.9266  IoU 0.8689  30 с
+[unstructured_l1_90] эпоха 7/20  loss 0.1513  val Dice 0.9265  IoU 0.8686  30 с
+[unstructured_l1_90] эпоха 8/20  loss 0.1482  val Dice 0.9251  IoU 0.8667  30 с
+[unstructured_l1_90] эпоха 9/20  loss 0.1456  val Dice 0.9300  IoU 0.8736  30 с
+[unstructured_l1_90] эпоха 10/20  loss 0.1473  val Dice 0.9278  IoU 0.8708  30 с
+[unstructured_l1_90] эпоха 11/20  loss 0.1432  val Dice 0.9283  IoU 0.8712  30 с
+[unstructured_l1_90] эпоха 12/20  loss 0.1461  val Dice 0.9281  IoU 0.8712  30 с
+[unstructured_l1_90] эпоха 13/20  loss 0.1432  val Dice 0.9270  IoU 0.8694  30 с
+[unstructured_l1_90] эпоха 14/20  loss 0.1403  val Dice 0.9267  IoU 0.8688  30 с
+[unstructured_l1_90] эпоха 15/20  loss 0.1354  val Dice 0.9278  IoU 0.8706  30 с
+[unstructured_l1_90] эпоха 16/20  loss 0.1381  val Dice 0.9270  IoU 0.8692  30 с
+[unstructured_l1_90] эпоха 17/20  loss 0.1338  val Dice 0.9284  IoU 0.8713  30 с
+[unstructured_l1_90] эпоха 18/20  loss 0.1352  val Dice 0.9269  IoU 0.8695  30 с
+[unstructured_l1_90] эпоха 19/20  loss 0.1391  val Dice 0.9278  IoU 0.8704  30 с
+[unstructured_l1_90] эпоха 20/20  loss 0.1353  val Dice 0.9288  IoU 0.8720  30 с
+  unstructured_l1  0.9 finetuned параметры 0.101 GMACs 1.000  test Dice 0.9233  PH2 Dice 0.9147
+-> /Users/mihailkrasnobaev/Desktop/Coursework_sem7/runs/results/prune_results.csv

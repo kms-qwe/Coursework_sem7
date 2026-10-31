@@ -1,0 +1,5 @@
+method,ratio,stage,params,nonzero_params,gmacs,params_frac,gmacs_frac,val_dice,test_dice,test_iou,test_jac65,test_dice_global,ph2_dice,ph2_iou,prune_sec,ft_min,model_file
+own_b,0.7,pruned,837203,837203,0.71497,0.03426,0.09118,0.50203,0.50405,0.3631,0.05774,0.5737,0.48462,0.3395,,,
+own_b,0.7,finetuned,837203,837203,0.71497,0.03426,0.09118,0.92182,0.91023,0.84524,0.81664,0.91788,0.90111,0.82624,,,models/own_b_70.pth
+own_b_greg,0.7,pruned,837203,837203,0.71497,0.03426,0.09118,0.91195,0.90373,0.83453,0.80105,0.91335,0.8883,0.80402,324.0,,
+own_b_greg,0.7,finetuned,837203,837203,0.71497,0.03426,0.09118,0.92632,0.91611,0.85288,0.82999,0.92461,0.91979,0.8563,324.0,2.7,models/own_b_greg_70.pth

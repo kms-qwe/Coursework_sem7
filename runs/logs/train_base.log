@@ -1,0 +1,69 @@
+device mps | torch 2.14.1 | smp 0.5.0 | torch-pruning 1.6.0
+train: 810, val: 90, test: 379, ph2: 200
+[base] эпоха 1/60  loss 0.9797  val Dice 0.8476  IoU 0.7482  25 с
+[base] эпоха 2/60  loss 0.6312  val Dice 0.8778  IoU 0.7950  24 с
+[base] эпоха 3/60  loss 0.4765  val Dice 0.9156  IoU 0.8513  24 с
+[base] эпоха 4/60  loss 0.3993  val Dice 0.8760  IoU 0.7938  24 с
+[base] эпоха 5/60  loss 0.3462  val Dice 0.9142  IoU 0.8504  24 с
+[base] эпоха 6/60  loss 0.3351  val Dice 0.9119  IoU 0.8466  24 с
+[base] эпоха 7/60  loss 0.2991  val Dice 0.9184  IoU 0.8555  25 с
+[base] эпоха 8/60  loss 0.2756  val Dice 0.9055  IoU 0.8384  25 с
+[base] эпоха 9/60  loss 0.2711  val Dice 0.9066  IoU 0.8384  27 с
+[base] эпоха 10/60  loss 0.2662  val Dice 0.9144  IoU 0.8473  28 с
+[base] эпоха 11/60  loss 0.2705  val Dice 0.9110  IoU 0.8428  29 с
+[base] эпоха 12/60  loss 0.2337  val Dice 0.9246  IoU 0.8648  28 с
+[base] эпоха 13/60  loss 0.2532  val Dice 0.9168  IoU 0.8525  28 с
+[base] эпоха 14/60  loss 0.2210  val Dice 0.9103  IoU 0.8424  28 с
+[base] эпоха 15/60  loss 0.2112  val Dice 0.9233  IoU 0.8615  28 с
+[base] эпоха 16/60  loss 0.2282  val Dice 0.9220  IoU 0.8602  29 с
+[base] эпоха 17/60  loss 0.2149  val Dice 0.9168  IoU 0.8562  29 с
+[base] эпоха 18/60  loss 0.2077  val Dice 0.9266  IoU 0.8686  29 с
+[base] эпоха 19/60  loss 0.1975  val Dice 0.9225  IoU 0.8619  29 с
+[base] эпоха 20/60  loss 0.2169  val Dice 0.9154  IoU 0.8503  31 с
+[base] эпоха 21/60  loss 0.2177  val Dice 0.9251  IoU 0.8662  30 с
+[base] эпоха 22/60  loss 0.2047  val Dice 0.9280  IoU 0.8699  30 с
+[base] эпоха 23/60  loss 0.1896  val Dice 0.9266  IoU 0.8686  30 с
+[base] эпоха 24/60  loss 0.1853  val Dice 0.9210  IoU 0.8605  30 с
+[base] эпоха 25/60  loss 0.1913  val Dice 0.9219  IoU 0.8621  29 с
+[base] эпоха 26/60  loss 0.1837  val Dice 0.9255  IoU 0.8663  30 с
+[base] эпоха 27/60  loss 0.1730  val Dice 0.9294  IoU 0.8735  30 с
+[base] эпоха 28/60  loss 0.1727  val Dice 0.9268  IoU 0.8689  30 с
+[base] эпоха 29/60  loss 0.1801  val Dice 0.9276  IoU 0.8702  30 с
+[base] эпоха 30/60  loss 0.1722  val Dice 0.9147  IoU 0.8543  30 с
+[base] эпоха 31/60  loss 0.1706  val Dice 0.9282  IoU 0.8709  30 с
+[base] эпоха 32/60  loss 0.1694  val Dice 0.9269  IoU 0.8689  30 с
+[base] эпоха 33/60  loss 0.1695  val Dice 0.9273  IoU 0.8703  30 с
+[base] эпоха 34/60  loss 0.1630  val Dice 0.9222  IoU 0.8648  30 с
+[base] эпоха 35/60  loss 0.1615  val Dice 0.9299  IoU 0.8736  30 с
+[base] эпоха 36/60  loss 0.1613  val Dice 0.9182  IoU 0.8562  30 с
+[base] эпоха 37/60  loss 0.1572  val Dice 0.9267  IoU 0.8689  30 с
+[base] эпоха 38/60  loss 0.1571  val Dice 0.9194  IoU 0.8574  30 с
+[base] эпоха 39/60  loss 0.1578  val Dice 0.9215  IoU 0.8660  30 с
+[base] эпоха 40/60  loss 0.1497  val Dice 0.9164  IoU 0.8593  31 с
+[base] эпоха 41/60  loss 0.1518  val Dice 0.9231  IoU 0.8630  31 с
+[base] эпоха 42/60  loss 0.1502  val Dice 0.9275  IoU 0.8707  31 с
+[base] эпоха 43/60  loss 0.1512  val Dice 0.9271  IoU 0.8695  31 с
+[base] эпоха 44/60  loss 0.1521  val Dice 0.9282  IoU 0.8712  31 с
+[base] эпоха 45/60  loss 0.1468  val Dice 0.9161  IoU 0.8569  31 с
+[base] эпоха 46/60  loss 0.1449  val Dice 0.9266  IoU 0.8690  31 с
+[base] эпоха 47/60  loss 0.1454  val Dice 0.9290  IoU 0.8720  31 с
+[base] эпоха 48/60  loss 0.1435  val Dice 0.9274  IoU 0.8703  31 с
+[base] эпоха 49/60  loss 0.1409  val Dice 0.9300  IoU 0.8743  32 с
+[base] эпоха 50/60  loss 0.1396  val Dice 0.9271  IoU 0.8700  31 с
+[base] эпоха 51/60  loss 0.1413  val Dice 0.9302  IoU 0.8744  31 с
+[base] эпоха 52/60  loss 0.1375  val Dice 0.9305  IoU 0.8749  31 с
+[base] эпоха 53/60  loss 0.1381  val Dice 0.9296  IoU 0.8736  31 с
+[base] эпоха 54/60  loss 0.1395  val Dice 0.9295  IoU 0.8736  31 с
+[base] эпоха 55/60  loss 0.1354  val Dice 0.9300  IoU 0.8744  31 с
+[base] эпоха 56/60  loss 0.1360  val Dice 0.9303  IoU 0.8750  31 с
+[base] эпоха 57/60  loss 0.1354  val Dice 0.9295  IoU 0.8734  31 с
+[base] эпоха 58/60  loss 0.1373  val Dice 0.9303  IoU 0.8746  31 с
+[base] эпоха 59/60  loss 0.1364  val Dice 0.9305  IoU 0.8749  31 с
+[base] эпоха 60/60  loss 0.1352  val Dice 0.9305  IoU 0.8749  31 с
+
+Параметры 24.44M | GMACs 7.84 | файл 93.4 МБ | обучение 29.2 мин, лучшая эпоха 60
+          Dice     IoU   Jac65
+val     0.9305  0.8749  0.8646
+test    0.9244  0.8677  0.8497
+ph2     0.9112  0.8470  0.8116
+-> /Users/mihailkrasnobaev/Desktop/Coursework_sem7/runs/models/base.pth

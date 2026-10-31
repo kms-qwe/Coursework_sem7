@@ -1,0 +1,29 @@
+macOS-26.6.2-arm64-arm-64bit | arm | потоков CPU: 10 | torch 2.14.1 | onnxruntime 1.31.0 | моделей: 25
+/Users/mihailkrasnobaev/Desktop/Coursework_sem7/src/benchmark.py:71: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter has become the default. Learn more about the new export logic: https://docs.pytorch.org/docs/stable/onnx_export.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html
+  torch.onnx.export(model.cpu().eval(), (x,), str(path), input_names=["input"], output_names=["logits"],
+base                  24.44M   7.84 GMACs  cpu1 45.9 мс  cpu 37.4 мс  mps 8.9 мс  ort1 20.3 мс  ort 23.4 мс
+bn_scale_30           11.94M   3.82 GMACs  cpu1 31.1 мс  cpu 25.5 мс  mps 6.7 мс  ort1 13.8 мс  ort 15.7 мс
+bn_scale_50            6.12M   2.01 GMACs  cpu1 21.8 мс  cpu 17.5 мс  mps 4.3 мс  ort1 9.0 мс  ort 9.0 мс
+bn_scale_70            2.17M   0.72 GMACs  cpu1 12.7 мс  cpu 11.1 мс  mps 4.1 мс  ort1 6.1 мс  ort 6.3 мс
+bn_scale_90            0.24M   0.09 GMACs  cpu1 5.1 мс  cpu 5.2 мс  mps 4.5 мс  ort1 2.4 мс  ort 2.3 мс
+fpgm_30               11.94M   3.82 GMACs  cpu1 31.1 мс  cpu 25.2 мс  mps 6.6 мс  ort1 13.8 мс  ort 15.5 мс
+fpgm_50                6.12M   2.01 GMACs  cpu1 21.8 мс  cpu 17.5 мс  mps 4.6 мс  ort1 9.1 мс  ort 9.7 мс
+fpgm_70                2.17M   0.72 GMACs  cpu1 12.6 мс  cpu 11.0 мс  mps 4.1 мс  ort1 6.1 мс  ort 6.2 мс
+fpgm_90                0.24M   0.09 GMACs  cpu1 5.2 мс  cpu 5.3 мс  mps 4.5 мс  ort1 2.4 мс  ort 2.3 мс
+l1_30                 11.94M   3.82 GMACs  cpu1 31.2 мс  cpu 25.3 мс  mps 6.6 мс  ort1 13.8 мс  ort 15.6 мс
+l1_50                  6.12M   2.01 GMACs  cpu1 21.8 мс  cpu 17.5 мс  mps 4.6 мс  ort1 9.0 мс  ort 9.2 мс
+l1_70                  2.17M   0.72 GMACs  cpu1 12.6 мс  cpu 11.0 мс  mps 4.1 мс  ort1 6.1 мс  ort 6.2 мс
+l1_90                  0.24M   0.09 GMACs  cpu1 5.2 мс  cpu 5.3 мс  mps 4.5 мс  ort1 2.4 мс  ort 2.3 мс
+random_30             11.94M   3.82 GMACs  cpu1 31.1 мс  cpu 25.3 мс  mps 6.6 мс  ort1 13.8 мс  ort 15.6 мс
+random_50              6.12M   2.01 GMACs  cpu1 21.8 мс  cpu 17.5 мс  mps 4.5 мс  ort1 9.0 мс  ort 9.2 мс
+random_70              2.17M   0.72 GMACs  cpu1 12.7 мс  cpu 11.0 мс  mps 4.1 мс  ort1 6.1 мс  ort 6.2 мс
+random_90              0.24M   0.09 GMACs  cpu1 5.2 мс  cpu 5.3 мс  mps 3.6 мс  ort1 2.4 мс  ort 2.3 мс
+taylor_30             11.94M   3.82 GMACs  cpu1 31.2 мс  cpu 25.3 мс  mps 6.7 мс  ort1 13.8 мс  ort 15.7 мс
+taylor_50              6.12M   2.01 GMACs  cpu1 21.8 мс  cpu 17.5 мс  mps 4.6 мс  ort1 9.1 мс  ort 9.1 мс
+taylor_70              2.17M   0.72 GMACs  cpu1 12.6 мс  cpu 11.0 мс  mps 4.1 мс  ort1 6.1 мс  ort 6.3 мс
+taylor_90              0.24M   0.09 GMACs  cpu1 5.2 мс  cpu 5.3 мс  mps 4.5 мс  ort1 2.4 мс  ort 2.3 мс
+unstructured_l1_30    17.11M   7.84 GMACs  cpu1 46.5 мс  cpu 37.2 мс  mps 8.9 мс  ort1 20.3 мс  ort 23.6 мс
+unstructured_l1_50    12.23M   7.84 GMACs  cpu1 46.5 мс  cpu 37.2 мс  mps 8.9 мс  ort1 20.3 мс  ort 23.8 мс
+unstructured_l1_70     7.34M   7.84 GMACs  cpu1 46.4 мс  cpu 37.1 мс  mps 8.9 мс  ort1 20.3 мс  ort 23.6 мс
+unstructured_l1_90     2.46M   7.84 GMACs  cpu1 46.4 мс  cpu 37.2 мс  mps 8.9 мс  ort1 20.3 мс  ort 23.9 мс
+-> /Users/mihailkrasnobaev/Desktop/Coursework_sem7/runs/results/benchmark.csv
