@@ -8,3 +8,4 @@ onnxruntime
 pyarrow
 pillow
 numpy
+matplotlib

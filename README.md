@@ -38,10 +38,23 @@ scripts/run_all.sh
 .venv/bin/python src/prune_baseline.py  # бейзлайн прунинга
 .venv/bin/python src/benchmark.py       # размер и скорость, экспорт в ONNX
 .venv/bin/python src/report.py          # runs/results/summary.md
-.venv/bin/python src/own_method_mini.py # свой метод (черновая версия)
+.venv/bin/python src/own_method_mini.py # свой метод (черновая версия, один уровень)
 ```
 
 У всех скриптов есть флаг `--smoke` для быстрой проверки на 16 картинках (вывод в `runs_smoke/`).
+
+## Свой метод
+
+Обучение идет в Google Colab, замер скорости — локально.
+
+1. Выполните `scripts/pack_for_colab.sh` и загрузите `colab_upload/coursework_sem7.zip` в корень «Мой диск».
+2. Откройте в Colab `notebooks/own_method_colab.ipynb` (среда с GPU) и выполните ячейки по порядку.
+3. Скачайте с Диска папку `coursework_sem7/runs`, распакуйте ее в корень проекта и выполните:
+
+```bash
+.venv/bin/python src/own_method.py --bench-only  # время и размер -> runs/results/own/own_benchmark.csv
+.venv/bin/python src/own_report.py               # runs/results/own/own_summary.md и графики
+```
 
 ## Результаты
 

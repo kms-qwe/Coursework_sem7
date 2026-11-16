@@ -46,3 +46,6 @@ AGENTS.md
 .DS_Store
 .idea/
 .vscode/
+
+# --- Архив для Google Colab ---
+colab_upload/
